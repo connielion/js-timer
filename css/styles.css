@@ -1,10 +1,12 @@
 html,
 body {
-  height: 1920px;
-  width: 1080;
+  height: 100%;
+  width: 100%;
+
 }
 
-body {
-  background-image: url("./img/screen.jpg");
-  background-size: cover;
+.grid {
+  display: flex;
+  flex-direction: row;
+  margin: 80px;
 }
