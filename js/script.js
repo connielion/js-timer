@@ -21,10 +21,10 @@ let i = setInterval(
     let seconds = Math.floor((timeLeft % (1000 * 60 )) / 1000);
 
     // Output days
-    document.getElementById("daysLeft").innerHTML = days + " days";
-    document.getElementById("hoursLeft").innerHTML = hours + " hours ";
-    document.getElementById("minutesLeft").innerHTML = minutes + " minutes and";
-    document.getElementById("secondsLeft").innerHTML = seconds + " seconds left.";
+    document.getElementById("daysLeft").innerHTML = days;
+    document.getElementById("hoursLeft").innerHTML = hours;
+    document.getElementById("minutesLeft").innerHTML = minutes;
+    document.getElementById("secondsLeft").innerHTML = seconds;
 
 
     if ( timeLeft< 0 ) {
@@ -53,10 +53,10 @@ let c = setInterval(
     let sec = Math.floor((timeLeftUntilCNY % (1000 * 60 )) / 1000);
 
     // Output days
-    document.getElementById("cnyDays").innerHTML = d + " days";
-    document.getElementById("cnyHours").innerHTML = hr + " hours ";
-    document.getElementById("cnyMinutes").innerHTML = min + " minutes and";
-    document.getElementById("cnySeconds").innerHTML = sec + " seconds left.";
+    document.getElementById("cnyDays").innerHTML = d;
+    document.getElementById("cnyHours").innerHTML = hr;
+    document.getElementById("cnyMinutes").innerHTML = min;
+    document.getElementById("cnySeconds").innerHTML = sec;
 
     if ( timeLeftUntilCNY < 0 ) {
       clearInterval(c);
@@ -84,11 +84,15 @@ let b = setInterval(
 
     // Output days
 
-    document.getElementById("day").innerHTML = _day + " days";
-    document.getElementById("hour").innerHTML = _hour + " hours";
-    document.getElementById("min").innerHTML = _min + " minutes and";
-    document.getElementById("sec").innerHTML = _sec + " seconds left";
+    document.getElementById("day").innerHTML = _day;
+    document.getElementById("hour").innerHTML = _hour;
+    document.getElementById("min").innerHTML = _min;
+    document.getElementById("sec").innerHTML = _sec;
 
+    if (timeTilMBD < 0 ) {
+      clearInterval(b);
+      document.getElementById("day").innerHTML = "Happy Birthday, Mom!";
+    }
 
   }
 )
