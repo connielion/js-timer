@@ -24,7 +24,7 @@
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
-    
+
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -33,33 +33,48 @@
     </div>
   </nav>
 
-<div class="ui grid row">
-  <div class="column">
-    <h1>How many days left until Christmas?</h1>
-    <div class="timeLeft">
-      <span class="days" id="daysLeft"></span>
-      <span class="hours" id="hoursLeft"></span>
-      <span class="mins" id="minutesLeft"></span>
-      <span class="secs"id="secondsLeft"></span>
-    </div>
-
+<div class="container">
+  <div class="row">
     <div class="column">
-      <h1>How many days left until Chinese New Year?</h1>
+    <h1>The time and date right now is...</h1>
+    <div id="timeRightNow"></div>
+      <h1>How many days left until Christmas?</h1>
       <div class="timeLeft">
-        <span class="days" id="daysLeftCNY"></span>
-        <span class="hours" id="hoursLeftCNY"></span>
-        <span class="mins" id="minutesLeftCNY"></span>
-        <span class="secs"id="secondsLeftCNY"></span>
+        <span class="days" id="daysLeft"></span>
+        <span class="hours" id="hoursLeft"></span>
+        <span class="mins" id="minutesLeft"></span>
+        <span class="secs"id="secondsLeft"></span>
+      </div>
+
+      <div class="column">
+        <h1>How many days left until Chinese New Year?</h1>
+        <div class="timeLeft">
+          <span class="days" id="cnyDays"></span>
+          <span class="hours" id="cnyHours"></span>
+          <span class="mins" id="cnyMinutes"></span>
+          <span class="secs"id="cnySeconds"></span>
+        </div>
+      </div>
+
+
+        <div class="column">
+          <h1>Time left until Mom's birthday?</h1>
+
+          <span class="days" id="day"></span>
+
+          <span class="hours" id="hour"></span>
+
+          <span class="minutes" id="min"></span>
+
+          <span class="seconds" id="sec"></span>
+
       </div>
     </div>
-
-
   </div>
-
 </div>
 
 
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
