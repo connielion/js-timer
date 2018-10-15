@@ -32,7 +32,7 @@
 
         <li class="nav-item icon">
 
-          <a class="nav-link" href="custom.html"><button type="button" class="btn btn-info">定制<i class="far fa-clock fa-lg"></i></button></a>
+          <a class="nav-link" href="custom.html"><button type="button" class="btn btn-info">Customize<i class="far fa-clock fa-lg"></i></button></a>
 
         </li>
 
@@ -42,51 +42,25 @@
   </nav>
 
 <div class="container">
-  <div class="row">
-    <div class="column">
-    <h1>现在的日期和时间是</h1>
-    <div id="timeRightNow"></div>
 
-    <!--christmas-->
-      <h1>离圣诞节还剩</h1>
-      <div class="timeLeft">
-        <span class="days" id="daysLeft"></span><span>天</span>
-        <span class="hours" id="hoursLeft"></span><span>小时</span>
-        <span class="mins" id="minutesLeft"></span><span>分钟</span>
-        <span class="secs"id="secondsLeft"></span><span>秒</span>
-      </div>
-
-      <div class="column">
-        <h1>离中国新年还剩:</h1>
-        <div class="timeLeft">
-          <span class="days" id="cnyDays"></span><span>天</span>
-          <span class="hours" id="cnyHours"></span><span>小时</span>
-          <span class="mins" id="cnyMinutes"></span><span>分钟</span>
-          <span class="secs"id="cnySeconds"></span><span>秒</span>
-        </div>
-      </div>
+  <div id="ex"></div>
 
 
-        <div class="column">
-          <h1>离赖婷婷肥老鼠的生日还有:</h1>
-
-          <span class="days" id="day"></span><span>天</span>
-
-          <span class="hours" id="hour"></span><span>小时</span>
-
-          <span class="minutes" id="min"></span><span>分钟</span>
-
-          <span class="seconds" id="sec"></span><span>秒</span>
-
-      </div>
-    </div>
+  <div class="form-group">
+    <label class="col-form-label" for="inputDefault">Input month/day/year, like "Dec 25, 2000".</label>
+    <input type="text" class="form-control" placeholder="mm dd, yyyy" id="input">
   </div>
+
+  <button class="btn btn-success mx-auto d-block" id="btn">Submit</button>
+
+
+
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
 
     <script src="js/custom.js"></script>
 </body>
