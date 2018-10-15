@@ -2,20 +2,42 @@ html,
 body {
   height: 100%;
   width: 100%;
-
+  position: fixed;
 }
 
-.container {
+.container-fluid {
   height: 100vh;
   background-color: #fff;
   font-size: 20px;
 }
 
+.en {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+}
+
+.custom {
+  background-image: url('../img/bg2.jpg');
+  background-size: cover;
+  color: white;
+}
+
 h1 {
   color: orange;
+  margin: 5px;
+  padding: 20px;
+}
+
+#timeRightNow , span {
+  color: #56ff00;
+  padding: 20px;
 }
 
 
-.btn-info {
+.btnAsk {
   color: white;
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+
 }
